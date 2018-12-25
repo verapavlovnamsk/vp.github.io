@@ -1,0 +1,433 @@
+/*Basic colors*/
+/*Fonts*/
+@font-face {
+  font-family: 'Intro';
+  src: url('../fonts/Intro.eot');
+  src: url('../fonts/Intro.eot?#iefix') format('embedded-opentype'), url('../fonts/Intro.woff2') format('woff2'), url('../fonts/Intro.woff') format('woff'), url('../fonts/Intro.ttf') format('truetype'), url('../fonts/Intro.svg#Intro') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url('../fonts/HelveticaNeueCyr-Bold.woff2') format('woff2'), url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url('../fonts/HelveticaNeueCyr-Roman.woff2') format('woff2'), url('../fonts/HelveticaNeueCyr-Roman.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('../fonts/MyriadPro-Bold.woff2') format('woff2'), url('../fonts/MyriadPro-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('../fonts/MyriadPro-Regular.woff2') format('woff2'), url('../fonts/MyriadPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/*Basic setting*/
+html {
+  font-size: 10px;
+  overflow-x: hidden;
+}
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+.container-fluid {
+  width: 100%;
+  max-width: none;
+  padding: 0;
+}
+/*Header*/
+.header {
+  padding-top: 340px;
+  height: 130.5625rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: url(../i/bg-girl.png) no-repeat center center;
+  background-size: cover;
+  max-width: 100%;
+}
+.header:before {
+  content: " ";
+  width: 100%;
+  height: 130.5625rem;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#910267), color-stop(#791367), color-stop(#611b64), color-stop(#4a1e5e), color-stop(#341e55), color-stop(#2c2357), color-stop(#242758), color-stop(#1c2a58), color-stop(#1e3665), color-stop(#1f4172), color-stop(#1f4e7f), to(#205a8b));
+  background-image: linear-gradient(to right bottom, #910267, #791367, #611b64, #4a1e5e, #341e55, #2c2357, #242758, #1c2a58, #1e3665, #1f4172, #1f4e7f, #205a8b);
+}
+.header_logo__logo {
+  padding-left: 78px;
+  margin: 0 auto;
+}
+.header_logo__titlelogo {
+  padding-left: 157px;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 3.75em;
+  font-weight: 900;
+}
+.header_logo__circle {
+  display: table;
+  height: 13vw;
+  width: 13vw;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-left: 157px;
+  text-align: center;
+  vertical-align: middle;
+  color: black;
+  -webkit-transform: rotate(-5.822deg);
+          transform: rotate(-5.822deg);
+  margin-top: 20px;
+}
+.header_logo__textcircle {
+  display: table-cell;
+  vertical-align: middle;
+  font-family: 'Intro', sans serif;
+  font-size: 2vw;
+  font-weight: 900;
+  color: #1e1c49;
+}
+.header_content {
+  float: right;
+  margin-top: 200px;
+  padding-right: 100px;
+  text-align: right;
+  font-size: 3.75em;
+  font-weight: 900;
+}
+div.header_content {
+  padding-bottom: 6rem;
+}
+.header_content__wrap-button {
+  border: 5px solid white;
+  float: right;
+  margin-right: 100px;
+  width: 25vw;
+  height: 4vw;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.header_content__ghost-button {
+  position: absolute;
+  display: block;
+  font-family: 'Myriad Pro';
+  font-size: 2em;
+}
+.header-first-div {
+  padding-bottom: 5rem;
+}
+.header__thin {
+  font-weight: 100;
+}
+/*Timer*/
+.timer {
+  height: 540px;
+  background: url(../i/transparent.png) no-repeat;
+  max-width: 100%;
+  min-height: 100%;
+  background-color: #1f1f1f;
+  background-size: contain;
+  text-align: left;
+  display: table-cell;
+  vertical-align: middle;
+  min-width: 100vw;
+}
+.wraptimer {
+  display: table;
+}
+#timer__text {
+  text-align: left;
+  font-size: 3.75em;
+  font-weight: 900;
+  font-family: Intro, sans serif;
+  color: #ffffff;
+  line-height: 1.417;
+}
+#timer__counter {
+  color: #fff;
+  text-align: center;
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 1000;
+  font-size: 6.383em;
+}
+li {
+  display: inline-block;
+  list-style-type: none;
+  padding-right: 4.3em;
+}
+li span {
+  display: block;
+}
+.timer__period {
+  font-family: "Myriad Pro";
+  font-size: 4rem;
+  font-weight: 400;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+.period {
+  text-align: center;
+}
+span.period {
+  padding: 15rem;
+}
+.period {
+  margin-left: 5rem;
+}
+/*White*/
+.white {
+  height: 100%;
+  background: url(../i/whitegirl.png) no-repeat right;
+  background-size: cover;
+  max-width: 100%;
+  min-height: 100%;
+  background-color: #e9e9e9;
+  text-align: left;
+  min-width: 100vw;
+  padding-left: 4vw;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+}
+div.white__textsmall {
+  padding: 3rem;
+}
+div.white__text {
+  padding: 3rem;
+}
+div.white__textblue {
+  padding: 3rem;
+}
+.white__text {
+  font-family: Intro;
+  color: #555555;
+  font-size: 3.75em;
+  font-weight: 400;
+  text-align: left;
+}
+.white__textsmall {
+  font-family: 'Myriad Pro';
+  color: #555555;
+  font-size: 2.5em;
+  font-weight: 400;
+  text-align: left;
+}
+.white__textblue {
+  font-family: Intro;
+  color: #2d8ae3;
+  font-size: 3.75vw;
+  font-weight: 400;
+  text-align: left;
+}
+.white__wbb {
+  border: 5px solid #2d8ae3;
+  float: left;
+  color: #2d8ae3;
+  width: 20vw;
+  height: 4vw;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2em;
+}
+.white__gbb {
+  position: absolute;
+  display: block;
+  font-size: 2vw;
+}
+.white__btn {
+  margin-top: 5rem;
+  margin-bottom: 15rem;
+  padding: 3rem;
+}
+/*About*/
+.about {
+  height: 100%;
+  color: #ffffff;
+  background: url(../i/bg-about.png) no-repeat center center;
+  background-size: cover;
+  max-width: 100%;
+  margin-top: 0;
+  text-align: left;
+  min-width: 100%;
+  padding-bottom: 3vw;
+}
+.about:before {
+  content: " ";
+  width: 100%;
+  height: 400rem;
+  position: absolute;
+  z-index: -1;
+  min-width: 100vw;
+  margin-top: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, right top, left bottom, from(#910267), color-stop(#791367), color-stop(#611b64), color-stop(#4a1e5e), color-stop(#341e55), color-stop(#2c2357), color-stop(#242758), color-stop(#1c2a58), color-stop(#1e3665), color-stop(#1f4172), color-stop(#1f4e7f), to(#205a8b));
+  background-image: linear-gradient(to left bottom, #910267, #791367, #611b64, #4a1e5e, #341e55, #2c2357, #242758, #1c2a58, #1e3665, #1f4172, #1f4e7f, #205a8b);
+}
+.about__text {
+  font-family: Intro;
+  color: white;
+  font-size: 3.75em;
+  font-weight: 400;
+  text-align: left;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+.about__textsmall {
+  font-family: 'Myriad Pro';
+  color: white;
+  font-size: 2.5em;
+  font-weight: 400;
+  text-align: left;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+.about div {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+p.about {
+  padding: 7rem;
+}
+/*advantages*/
+.advantages {
+  height: 1154px;
+  background-color: blue;
+  background: url(../i/bg-advantages.jpg) center center no-repeat;
+  background-size: cover;
+}
+.advantages__title {
+  font-size: 3vw;
+  color: white;
+  text-align: center;
+  padding-top: 17rem;
+  margin-bottom: 15rem;
+  font-family: 'Intro';
+}
+.advantages__icontitle {
+  font-family: 'Myriad Pro';
+  font-size: 1.7vw;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  padding-top: 5rem;
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+}
+.advantages__icon {
+  margin: 0 auto;
+}
+.advantages__iconblock {
+  margin: 0 auto;
+  min-hight: 20rem;
+}
+.advantages__texticon {
+  font-family: 'Myriad Pro';
+  font-size: 1.5vw;
+  color: white;
+  text-align: center;
+}
+/*car*/
+.car {
+  height: 120rem;
+  background: url(../i/bg-car.jpg) center center no-repeat;
+  background-size: cover;
+  padding-right: 200px;
+  padding-top: 10rem;
+}
+.car__texttitle {
+  font-family: Intro;
+  color: white;
+  font-size: 3.75em;
+  font-weight: 400;
+  text-align: left;
+}
+.car__textsmall {
+  font-family: 'Myriad Pro';
+  color: white;
+  font-size: 2.5em;
+  font-weight: 400;
+  text-align: left;
+}
+.car__logofreedom {
+  margin-top: 35vh;
+  margin-bottom: 5vh;
+}
+/*footer*/
+.footerwrap {
+  height: 30rem;
+  background: #3b3b3b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 100%;
+  min-height: 100%;
+}
+.footer__text {
+  font-family: 'HelveticaNeueCyr';
+  color: #ffffff;
+  font-size: 1.25em;
+  font-weight: 400;
+  text-align: center;
+}
+.footer__textenglish {
+  font-family: 'HelveticaNeueCyr';
+  color: #ffffff;
+  font-size: 1.25em;
+  font-weight: 400;
+  text-align: center;
+  text-transform: upper-case;
+}
+@media and (max-width: 767px) {
+  html {
+    font-size: 1em;
+  }
+  .car__logofreedom {
+    width: 30%;
+  }
+}
